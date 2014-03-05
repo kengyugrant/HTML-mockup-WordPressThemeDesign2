@@ -5,11 +5,12 @@ body {
 		background:$white;
 		width:990px;
 		margin: 0 auto;
-
+		
 		nav#main-nav {
 			width: 100%;
 			background:$black;
 			padding: 5px 0;
+			border-bottom:2px solid lighten($black, 20%);
 			ul {
 				list-style: none;
 				padding: 0 10px;
@@ -54,14 +55,14 @@ body {
 	.container {
 		width: 990px;
 		margin: 0 auto;
-		padding-top: 2em;
+		padding-top: 4em;
 		#main {
 			width: 70%;
 			float: left;
 			
 			article {
 				border:1px solid lighten($black, 80%);
-				
+				box-shadow: 0 0 1px 0 lighten($black, 80%);
 				//opacity: 0.9;
 				/*-webkit-transition:all 0.2s ease-in;
 				-moz-transition:all 0.2s ease-in;
@@ -127,9 +128,71 @@ body {
 			}
 		}
 		#sidebar {
-			width: 25%;
+			width: 26%;
 			float: left;
-			margin-left: 1em;
+			margin-left: 4%;
+			section.widget {
+				border:1px solid lighten($black, 80%);
+				padding: 10px;
+				box-shadow: 0 0 1px 0 lighten($black, 80%);
+				margin:0 auto;
+				& {
+					margin-bottom:20px;
+				}
+				h3.widget-title {
+					line-height: 2;
+					color: $black;
+					font-family:$JoseSans;
+					text-align: center;
+					font-size: 1.5em;
+					border-bottom:1px solid lighten($black, 80%);
+					margin-bottom: 10px;
+				}
+				ul.widget-body {
+					li {
+						& {
+							margin-bottom: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	footer {
+		padding-top:2em;
+		background: $black;
+		box-shadow:0 -1px 10px 2px darken($white, 20%);
+		section.widget {
+			float: left;
+			width: 15%;
+			border:1px solid lighten($black,20%);
+			padding:0.7%;
+			& {
+				margin-right: 2.8%;
+			}
+			&:first-of-type {
+				margin-left: 2.8%;
+			}
+			h3.widget-title {
+				font-size: 1.5em;
+				font-family: $JoseSans;
+				color:$white;
+				text-align: center;
+				line-height: 2;
+				border-bottom:1px solid lighten($black, 20%);
+				margin-bottom: 10px;
+			}
+		}
+		#copy-right {
+			width: 80%;
+			margin:0 auto;
+			margin-top: 30px;
+			border-top:2px solid $blue;
+			color:$blue;
+			font-family: $JoseSans;
+			font-size: 1.5em;
+			text-align: center;
+			line-height: 3;
 		}
 	}
 
