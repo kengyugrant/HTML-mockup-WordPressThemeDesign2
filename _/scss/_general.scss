@@ -1,0 +1,21 @@
+a {
+	text-decoration:none;
+	color:$blue;
+	font-family:$OpenSans;
+}
+
+p {
+	font-family: $OpenSans;
+	font-size:1em;
+	line-height:1.2;
+	color:$black;
+	padding:1em;
+}
+.clearfix:before, .clearfix:after {
+	display: table;
+	content:'';
+}
+
+.clearfix:after {
+	clear:both;
+}
